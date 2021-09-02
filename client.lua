@@ -149,7 +149,6 @@ AddEventHandler('poke_planting:regar1', function(source)
             table.remove(myPlants, key)
             Wait(800)
             local object = CreateObject(plant2, x, y, z, true, true, false)
-            TriggerClientEvent("rdohurp_plantid",object)
             local plantCount = #myPlants2+1
             myPlants2[plantCount] = {["object"] = object, ['x'] = x, ['y'] = y, ['z'] = z, ['stage'] = 2, ['timer'] = 150, ['hash'] = hash1, ['hash2'] = hash2, ['hash3'] = hash3}
             print(myPlants2[plantCount],myPlants2[plantCount]['object'])
